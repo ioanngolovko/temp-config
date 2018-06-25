@@ -16,8 +16,3 @@ eureka:
     fetch-registry: false
     healthcheck:
       enabled: true
-
-logging:
-  level:
-    com.netflix.eureka: OFF
-    com.netflix.discovery: OFF
