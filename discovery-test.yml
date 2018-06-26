@@ -2,14 +2,14 @@ spring:
   application:
     name: discovery
 
+
 server:
   port: ${DISCOVERY_SERVER_PORT:8082}
+  context-path: /${spring.application.name}
 
 eureka:
-
   instance:
     hostname: localhost
-
   client:
     service-url:
       defaultZone: http://localhost:${server.port}/eureka/
