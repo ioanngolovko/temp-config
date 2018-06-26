@@ -13,3 +13,11 @@ zuul:
     config:
       path: /config/**
       serviceId: config
+
+hystrix:
+  command:
+    config:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 600000
