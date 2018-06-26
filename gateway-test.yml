@@ -13,6 +13,14 @@ zuul:
     config:
       path: /config/**
       serviceId: config
+    discovery:
+      path: /discovery/**
+      serviceId: discovery
+
+
+ribbon:
+  ConnectTimeout: 3000
+  ReadTimeout: 60000
 
 hystrix:
   command:
