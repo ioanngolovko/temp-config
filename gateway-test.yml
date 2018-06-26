@@ -21,10 +21,12 @@ zuul:
 ribbon:
   ConnectTimeout: 3000
   ReadTimeout: 60000
+  restclient:
+    enabled: true
 
 hystrix:
   command:
-    config:
+    default:
       execution:
         isolation:
           thread:
