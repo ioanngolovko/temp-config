@@ -5,7 +5,8 @@ spring:
 
 server:
   port: ${DISCOVERY_SERVER_PORT:8082}
-  servlet-path: /${spring.application.name}
+  servlet:
+    context-path: /${spring.application.name}
 
 eureka:
   instance:
