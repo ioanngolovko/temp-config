@@ -9,7 +9,7 @@ zuul:
   routes:
     eureka:
       path: /discovery/**
-      url: http://localhost:${DISCOVERY_SERVER_PORT:8082}/discovery
+      url: http://localhost:${DISCOVERY_SERVER_PORT:8082}/discovery/eureka
     config:
       path: /config/**
       serviceId: config

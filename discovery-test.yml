@@ -6,14 +6,14 @@ spring:
 server:
   port: ${DISCOVERY_SERVER_PORT:8082}
   servlet:
-    context-path: /${spring.application.name}
+    context-path: /discovery
 
 eureka:
   instance:
     hostname: localhost
   client:
     service-url:
-      defaultZone: http://localhost:${server.port}/discovery/
+      defaultZone: http://localhost:${server.port}/discovery/eureka
     register-with-eureka: false
     fetch-registry: false
     healthcheck:
